@@ -1,7 +1,10 @@
 package UDP;
 
-import java.io.*;
-import java.net.*;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
 
 
 public class UDPSocket implements AutoCloseable
@@ -22,7 +25,7 @@ public class UDPSocket implements AutoCloseable
         this(new DatagramSocket(port));
     }
 
-    protected UDPSocket (DatagramSocket socket){
+    protected UDPSocket(DatagramSocket socket){
         this.socket = socket;
     }
 

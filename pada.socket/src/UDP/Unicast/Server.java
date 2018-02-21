@@ -1,4 +1,4 @@
-import UDP.UDPSocket.Unicast;
+package UDP.Unicast;
 
 public class Server
 {
