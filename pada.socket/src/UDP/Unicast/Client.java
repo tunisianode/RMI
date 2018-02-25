@@ -1,5 +1,7 @@
 package UDP.Unicast;
 
+import UDP.UDPSocket;
+
 import java.net.*;
 public class Client
 {

@@ -5,7 +5,7 @@ public class Client
     public static void main(String[] args)
     {
         System.out.println("aufbau der Verbindung");
-        try(TCPSocket tcpSocket = new TCPSocket("192.168.1.166",1250))
+        try(TCPSocket tcpSocket = new TCPSocket("192.168.1.176",1250))
         {
             // set counter to zero
             System.out.println("Zähler zurücksetzen");
