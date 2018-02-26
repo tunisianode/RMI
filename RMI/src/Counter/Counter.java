@@ -5,6 +5,6 @@ import java.rmi.RemoteException;
 
 public interface Counter extends Remote
 {
-    public int reset() throws RemoteException;
-    public int increment() throws RemoteException;
+    int reset() throws RemoteException;
+    int increment() throws RemoteException;
 }

@@ -14,14 +14,14 @@ public class CounterImpl extends UnicastRemoteObject implements Counter
     }
 
     @Override
-    public synchronized int reset() throws RemoteException
+    public synchronized int reset()
     {
         counter = 0;
         return counter;
     }
 
     @Override
-    public synchronized int increment() throws RemoteException
+    public synchronized int increment()
     {
         counter++;
         return counter;
